@@ -14,9 +14,6 @@ import traci
 
 from sumo_rl import SumoEnvironment
 
-# change dir
-os.chdir('C:/Users/nsbea/OneDrive/5_core/RL/MSCA_reinforcement_learning/final')
-
 env = SumoEnvironment(
     net_file="nets/2way-single-intersection/single-intersection.net.xml",
     route_file="nets/2way-single-intersection/single-intersection-vhvh.rou.xml",
