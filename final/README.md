@@ -12,3 +12,4 @@
 
 ## Warning
 Need Stable baseline3 (Bleeding-edge version), not use stable version, which is not support gymnasium.
+see https://stable-baselines3.readthedocs.io/en/master/guide/install.html
