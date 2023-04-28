@@ -8,6 +8,7 @@
 - nets/: This contains the net file for SUMO. Refer to the SUMO documentation.
 - output/: Save output from the simulation.
 - utils/: Contains some utilities for working.
+- environment.yml: the environment for this project. use conda for environment management.
 
 ## Warning
-Currently, stable baseline cannot be used for training due to the friction between gym and gymnasium. We have to use another package or write our own class for training.
+Need Stable baseline3 (Bleeding-edge version), not use stable version, which is not support gymnasium.

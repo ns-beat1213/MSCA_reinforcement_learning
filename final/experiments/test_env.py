@@ -1,9 +1,8 @@
-from stable_baselines3.common.env_checker import check_env
 import os
 import sys
+import gymnasium as gym
 
-import gym
-from stable_baselines3.dqn.dqn import DQN
+from stable_baselines3 import DQN
 
 
 if "SUMO_HOME" in os.environ:
@@ -26,4 +25,15 @@ if __name__ == "__main__":
         num_seconds=1000,
     )
 
-    check_env(env)
+    model = DQN(
+        env=env,
+        policy="MlpPolicy",
+        learning_rate=0.001,
+        learning_starts=0,
+        train_freq=1,
+        target_update_interval=500,
+        exploration_initial_eps=0.05,
+        exploration_final_eps=0.01,
+        verbose=1,
+    )
+    model.learn(total_timesteps=1000)
