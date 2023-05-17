@@ -20,7 +20,7 @@ env = SumoEnvironment(
     out_csv_name="outputs/2way-single-intersection/random",
     single_agent=True,
     use_gui=True,
-    num_seconds=1000,
+    num_seconds=500,
 )
 
 # run simualtion with random actions
@@ -28,6 +28,8 @@ obs, info = env.reset()
 done = False
 while not done:
     next_obs, reward, terminated, truncated, info = env.step(env.action_space.sample())
-    
-    env.save_csv('outputs/test', 1)
     done = terminated or truncated
+
+
+env.save_csv('outputs/2way-single-intersection/random/random', 1)
+env.close()
