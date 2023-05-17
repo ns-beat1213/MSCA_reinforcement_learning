@@ -1,5 +1,9 @@
-# MSCA_reinforcement_learning
- 
-This repo is for MSCA reinforcement learning class
+# MSCA Reinforcement Learning
 
-PS folder contains each week's homework assignment.
+This repository is dedicated to the MSCA Reinforcement Learning class.
+
+## Contents
+
+- **PS**: Contains homework for each week.
+- **final**: Includes the final project for the class.
+- **paper**: Features research papers related to the subject.
